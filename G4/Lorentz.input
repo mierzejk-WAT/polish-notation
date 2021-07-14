@@ -1,0 +1,11 @@
+name: Lorentz;
+description: Lorentz-FitzGerald contraction (c - 299792458);
+*(S) **(-1 :^v2 ^299792458 2).5
+
+Python:
+c = 299792458
+v = 1/c, 0.1, 0.9, 0.999
+l=1000
+contraction = map(lambda x: l-modules.Lorentz(l, x*c), v)
+for i in xrange(len(v)):
+    print '{:>5}: {:.2%}'.format(v[i], contraction[i]/l)

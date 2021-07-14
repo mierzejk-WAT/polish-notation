@@ -1,0 +1,6 @@
+name: Ratio; description: Golden ratio;
+:(+1^5 .5)2
+
+Python:
+r = modules.Ratio()
+print (2/r, 2/r**2)
