@@ -28,11 +28,11 @@ Power         : '^';
 DoubleMultiply: '**' -> type(Power);
 Max           : 'max';
 Min           : 'min';
-Integer       : (TILDE | HASH | UP | DOWN);
 Truncation    : Integer* HASH;
 Round         : Integer* TILDE;
 Ceiling       : Integer* UP;
 Floor         : Integer* DOWN;
+Integer       : (TILDE | HASH | UP | DOWN);
 IntPart       : '0'
               | [1-9]+ [0-9]*
               ;
